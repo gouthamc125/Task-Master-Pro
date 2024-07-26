@@ -4,6 +4,6 @@ EXPOSE 8080
  
 WORKDIR /usr/src/app
 
-COPY target/*.jar /usr/src/app/app.jar
+COPY target-docker/*.jar /usr/src/app/app.jar
 
 CMD ["java", "-jar", "app.jar"]
