@@ -89,7 +89,7 @@ jobs:
         token: ${{ secrets.TOKEN }}
     
     - name: Verify the helm files
-      run: ls -l TASK-MASTER_PRO/helm/taskamster-chart/
+      run: ls -l TASK-MASTER-PRO/helm/taskamster-chart/
     
     - name: Update tag in helm chart
       run: |
