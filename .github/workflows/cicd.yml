@@ -50,7 +50,7 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       
-      - name: Build and push Docker Image
+      - name: Build and push Docker Image #Building the docker image and push to docker hun repository
         uses: docker/build-push-action@v4
         with:
           context: .
