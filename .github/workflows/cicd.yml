@@ -31,7 +31,10 @@ jobs:
       run: |
         sudo apt-get update
         sudo apt-get install maven -y
-      
+    
+    - name: Unit Test 
+      run: mvn clean test
+          
     - name: Build with Maven
       run: mvn package -DskipTests=true
 
