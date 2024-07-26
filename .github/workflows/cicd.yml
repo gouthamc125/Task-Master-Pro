@@ -89,16 +89,6 @@ jobs:
         token: ${{ secrets.TOKEN }}
     
     - name: Verify the helm files
-      run: ls -l TASK-MASTER-PRO/helm/taskamster-chart/
+      run: sudo find / -type f -name values.yml
     
-    - name: Update tag in helm chart
-      run: |
-        sed -i 's/tag: .*/tag: "${{ github.run_id }}"/' helm/taskmaster-chart/values.yml
-
-    - name: Commit and push changes
-      run: |
-        git config --global user.email "goutham@gmail.com"
-        git config --global user.name "goutham"
-        git add helm/taskmaster-chart/values.yml
-        git commit -m "Update tag in helm chart"
-        git push
+  
