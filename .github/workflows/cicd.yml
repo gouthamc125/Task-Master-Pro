@@ -96,7 +96,7 @@ jobs:
       run: |
         git config --global user.email "goutham@gmail.com"
         git config --global user.name "goutham"
-        git add helm/taskmaster-chart/values.yml
-        git commit -m "Update tag in helm chart"
+        git add helm/taskmaster-chart/values.yaml
+        git commit -m "feat: update tag in helm chart values file"
         git push
     
