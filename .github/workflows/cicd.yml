@@ -49,7 +49,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Copy built files
-        run: cp -r target/ target-docker/
+        run: cp -r /home/runner/work/Task-Master-Pro/Task-Master-Pro/target/ target-docker/
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
