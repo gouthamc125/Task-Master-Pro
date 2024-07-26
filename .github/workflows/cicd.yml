@@ -88,6 +88,9 @@ jobs:
       with:
         token: ${{ secrets.TOKEN }}
     
+    - name: Verify the helm files
+      run: ls -l TASK-MASTER_PRO/helm/taskamster-chart/
+    
     - name: Update tag in helm chart
       run: |
         sed -i 's/tag: .*/tag: "${{ github.run_id }}"/' helm/taskmaster-chart/values.yml
