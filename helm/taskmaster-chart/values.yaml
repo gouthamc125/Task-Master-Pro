@@ -8,7 +8,7 @@ image:
   repository: gouthamc125/task-master-pro
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "v1"
+  tag: "10121598004"
 
 ingress:
   enabled: false
